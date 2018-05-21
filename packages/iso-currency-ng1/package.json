@@ -1,0 +1,31 @@
+{
+  "name": "iso-currency-ng1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./lib/index.js",
+  "scripts": {
+    "start": "npm run build && npm run demo",
+    "clean": "rm -rf ./tmp && rm -rf ./lib",
+    "build": "npm run clean && tsc -p . && rollup -c",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "demo": "browser-sync start --server --files 'lib/*' 'demo/*' --startPath='/demo/'"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/angular": "latest",
+    "angular": "^1.6.45",
+    "bootstrap": "3.x.x",
+    "browser-sync": "^2.24.4",
+    "rollup": "^0.59.1",
+    "rollup-plugin-commonjs": "^9.1.3",
+    "rollup-plugin-node-resolve": "^3.3.0",
+    "rollup-plugin-uglify": "^4.0.0",
+    "typescript": "^2.8.3",
+    "uglify-js": "^3.3.23"
+  },
+  "dependencies": {
+    "iso-4217-currency-codes": "^1.0.0"
+  }
+}
