@@ -5,4 +5,4 @@ Currency symbols according to ISO 4217 currency codes
 - `npm install`
 - `lerna bootstrap`
 - `cd iso-currency-(ng1|ngx)`
-- `npm run start` for local demo or `npm run build` for lib build
+	- `npm run start` for local demo or `npm run build` for lib build
