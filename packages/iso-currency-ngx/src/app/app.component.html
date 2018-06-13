@@ -1,0 +1,11 @@
+<div class="container">
+    <h1>iso-currency <small>examples</small></h1>
+    <div class="form-group">
+        <label for="amount">Currency amount</label>
+        <input type="text" class="form-control" id="amount" name="amount" placeholder="Enter amount" [(ngModel)]="amount" />
+    </div>
+</div>
+<div class="container" *ngFor="let currency of currencies">
+    <div class="col-xs-2">{{ currency }}:</div>
+    <div class="col-xs-10">{{ amount | isoCurrency:currency }}</div>
+</div>
